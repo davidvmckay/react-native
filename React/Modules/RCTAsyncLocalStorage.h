@@ -25,6 +25,9 @@
 
 @property (nonatomic, readonly, getter=isValid) BOOL valid;
 
+// NOTE(nikki): Added to allow scoped per Expo app
+- (instancetype)initWithStorageDirectory:(NSString *)storageDirectory;
+
 // Clear the RCTAsyncLocalStorage data from native code
 - (void)clearAllData;
 
